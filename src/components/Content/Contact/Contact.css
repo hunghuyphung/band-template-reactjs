@@ -1,0 +1,23 @@
+
+.font-18 {
+    font-size: 18px;
+}
+
+.info-input {
+    width: calc(50% - 8px);
+    margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+    .info-input {
+        width: 100%;
+    }
+
+    .text-contact-width {
+        width: 100%;
+    }
+
+    .info {
+        margin-bottom: 16px;
+    }
+}

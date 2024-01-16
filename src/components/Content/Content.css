@@ -1,0 +1,10 @@
+
+#content {
+    position: relative;
+    top: 46px;
+}
+
+
+.content-width {
+    max-width: 800px;
+}

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, input {
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+img {
+    display: block;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-third {
+    width: 33.3333333333333333333333333%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.b-button {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+}
+
+.b-input {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.font-segoe {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.color-black {
+    color: #000;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.bc-black {
+    background-color: #000;
+}
+
+.bc-white {
+    background-color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.h-opac {
+    opacity: 0.6;
+}
+
+.letter-spacing-4 {
+    letter-spacing: 4px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+.hover-gray:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.padding-0-8 {
+    padding: 0 8px;
+}
+
+.padding-0-16 {
+    padding: 0 16px;
+}
+
+.padding-8-16 {
+    padding: 8px 16px;
+}
+
+.padding-12-24 {
+    padding: 12px 24px;
+}
+
+.padding-32-0 {
+    padding: 32px 0;
+}
+
+.padding-64-16 {
+    padding: 64px 16px;
+}
+
+.margin-0-8 {
+    margin: 0 8px;
+}
+
+.margin-15-0 {
+    margin: 15px 0;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .flex-column-small {
+        flex-direction: column;
+    }
+
+    .width-100-small {
+        width: 100%;
+    }
+}
