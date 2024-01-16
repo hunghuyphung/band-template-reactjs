@@ -16,14 +16,14 @@ const tourPlaces = [
         id: 2,
         name: 'Paris',
         image: parisImg,
-        date: 'Fri 27 Nov 2016',
+        date: 'Sat 28 Nov 2016',
         desc: 'Praesent tincidunt sed tellus ut rutrum sed vitae justo.'
     },
     {
         id: 3,
         name: 'San Francisco',
         image: sanfranImg,
-        date: 'Fri 27 Nov 2016',
+        date: 'Sun 29 Nov 2016',
         desc: 'Praesent tincidunt sed tellus ut rutrum sed vitae justo.'
     }
 ];

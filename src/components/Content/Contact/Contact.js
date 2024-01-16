@@ -1,4 +1,8 @@
 import './Contact.css';
+import {faLocationDot} from "@fortawesome/free-solid-svg-icons/faLocationDot";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
     return (
@@ -7,11 +11,11 @@ function Contact() {
             <p className="margin-15-0 h-opac"><i>Fan? Drop a note!</i></p>
             <div className="padding-32-0 display-flex text-justify flex-column-small">
                 <div className="width-50 font-18 text-contact-width info">
-                    Chicago, US
+                    <FontAwesomeIcon className="info-icon" icon={faLocationDot} /> Chicago, US
                     <br/>
-                    Phone: +00 151515
+                    <FontAwesomeIcon className="info-icon" icon={faPhone} /> Phone: +00 151515
                     <br/>
-                    Email: mail@mail.com
+                    <FontAwesomeIcon className="info-icon" icon={faEnvelope} /> Email: mail@mail.com
                 </div>
                 <div className="width-50 text-contact-width">
                     <div className="display-flex flex-between flex-column-small">
