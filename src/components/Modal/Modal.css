@@ -43,6 +43,11 @@
     background-color: #009688;
 }
 
+.footer-close {
+    background-color: #f44336;
+    margin: 16px 0;
+}
+
 @keyframes animatetop {
     from {
         top: -300px;
@@ -51,5 +56,32 @@
     to {
         top: 0;
         opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    #modal {
+        padding-top: 50px;
+    }
+
+    #modal-content {
+        width: auto;
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    #modal {
+        padding-top: 50px;
+    }
+
+    #modal-content {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 993px) {
+    #modal-content {
+        max-width: 600px;
     }
 }

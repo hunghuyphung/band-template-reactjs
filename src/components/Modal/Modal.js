@@ -48,8 +48,7 @@ function Modal() {
                   </button>
                   <div className="display-flex flex-between">
                       <button
-                          className="b-button color-white"
-                          style={{backgroundColor: '#f44336', margin: '16px 0'}}
+                          className="b-button color-white footer-close hover-gray"
                           onClick={handleClickClose}
                       >
                           Close
