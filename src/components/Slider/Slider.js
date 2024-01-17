@@ -35,7 +35,8 @@ function Slider() {
         }, 4000);
     }, [slideIndex]);
 
-    const index = slideIndex === 0 ? 0 : slideIndex - 1;
+    const index = (slideIndex === 0 || slideIndex > 2) ? 0 : slideIndex - 1;
+    console.log(index);
 
     return (
         <div id="slider">
