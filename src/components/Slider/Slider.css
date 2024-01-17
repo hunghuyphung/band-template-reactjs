@@ -1,9 +1,8 @@
 #slider {
     position: relative;
     top: 46px;
-    padding-top: 50%;
-    background: url("../../assets/ny.jpg") no-repeat top center;
-    background-size: cover;
+    /*background: url("../../assets/ny.jpg") no-repeat top center;*/
+    /*background-size: cover;*/
 }
 
 #slide-heading {
