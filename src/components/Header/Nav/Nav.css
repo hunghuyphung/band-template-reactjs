@@ -10,6 +10,13 @@
     color: #fff;
 }
 
+#sub-nav {
+    position: fixed;
+    top: 46px;
+    left: 0;
+    right: 0;
+}
+
 @media (max-width: 600px) {
     .nav-hide-small {
         display: none;
