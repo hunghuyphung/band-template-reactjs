@@ -1,12 +1,12 @@
 import './TourCard.css';
-import {useState} from "react";
 import Modal from "../../Modal/Modal";
+import {useState} from "react";
 
 function TourCard({tourPlace}) {
-    const [buyClicked, setBuyClicked] = useState(false);
+    const [modalDisplayed, setModalDisplayed] = useState(false);
 
-    const showModal = () => {
-      setBuyClicked(true);
+    const handleDisplayModal = (value) => {
+        setModalDisplayed(value);
     };
 
     return (
@@ -18,11 +18,11 @@ function TourCard({tourPlace}) {
                 <p className="margin-15-0">{tourPlace.desc}</p>
                 <button
                     className="b-button bc-black color-white hover-gray"
-                    onClick={showModal}
+                    onClick={() => handleDisplayModal(true)}
                 >Buy Tickets
                 </button>
             </div>
-            {buyClicked && <Modal></Modal>}
+            {modalDisplayed && <Modal handleDisplayModal={handleDisplayModal}></Modal>}
         </div>
     );
 }

@@ -5,18 +5,12 @@ import {faCartShopping} from "@fortawesome/free-solid-svg-icons/faCartShopping";
 import {faUser} from "@fortawesome/free-solid-svg-icons/faUser";
 import {faCheck} from "@fortawesome/free-solid-svg-icons/faCheck";
 import {faXmark} from "@fortawesome/free-solid-svg-icons/faXmark";
-import {useState} from "react";
 
-function Modal() {
-    const [closed, setClosed] = useState(false);
+function Modal({handleDisplayModal}) {
 
     const handleClickClose = () => {
-      setClosed(true);
+        handleDisplayModal(false);
     };
-
-    if (closed) {
-        return (<div></div>);
-    }
 
     return (
       <div id="modal">

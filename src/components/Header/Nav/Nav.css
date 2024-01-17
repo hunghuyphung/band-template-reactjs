@@ -22,3 +22,9 @@
         display: none;
     }
 }
+
+@media (min-width: 600px) {
+    #sub-nav {
+        display: none!important;
+    }
+}
