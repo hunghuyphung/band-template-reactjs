@@ -24,18 +24,17 @@ const slidePlaces = [
 
 function Slider() {
     const [slideIndex, setSlideIndex] = useState(0);
-    
+
     useLayoutEffect(() => {
-        setTimeout(() => {
-            if (slideIndex === 3) {
-                setSlideIndex(0);
-            } else {
-                setSlideIndex(prevIndex => prevIndex + 1);
-            }
+        const timerId = setTimeout(() => {
+            setSlideIndex(prevIndex => (prevIndex + 1) % 3);
         }, 4000);
+
+        // Cleanup the timer to avoid potential memory leaks
+        return () => clearTimeout(timerId);
     }, [slideIndex]);
 
-    const index = (slideIndex === 0 || slideIndex > 2) ? 0 : slideIndex - 1;
+    const index = (slideIndex === 0 || slideIndex > 2) ? 0 : slideIndex;
     console.log(index);
 
     return (
