@@ -34,15 +34,12 @@ function Slider() {
         return () => clearTimeout(timerId);
     }, [slideIndex]);
 
-    const index = (slideIndex === 0 || slideIndex > 2) ? 0 : slideIndex;
-    console.log(index);
-
     return (
         <div id="slider">
-            <img src={slidePlaces[index].image} alt="" style={{width: '100%'}}/>
+            <img src={slidePlaces[slideIndex].image} alt="" style={{width: '100%'}}/>
             <div id="slide-heading" className="color-white text-center">
-                <h3>{slidePlaces[index].name}</h3>
-                <p className="margin-15-0 font-segoe"><b>{slidePlaces[index].desc}</b></p>
+                <h3>{slidePlaces[slideIndex].name}</h3>
+                <p className="margin-15-0 font-segoe"><b>{slidePlaces[slideIndex].desc}</b></p>
             </div>
         </div>
     );
